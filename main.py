@@ -3,12 +3,13 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Email
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'the random string'
 
 db = SQLAlchemy()
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:Abhimanyu_00@db.lwhckdlsqfdbttecgnnu.supabase.co:5432/postgres"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URI_KEY")
 db.init_app(app)
 
 

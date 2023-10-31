@@ -1,10 +1,4 @@
-.container-right{
 
-    background-color: #9CB6C7 !important;
-}
-.container-left{
-    position: sticky;
-}
 .about-me{
     padding: 10px 18px 10px 15px;
     background-color: #9CB6C7;
@@ -59,7 +53,7 @@
     color: #149ddd;
 }
 .row ul li  span{
-    font-size: 17px;
+    font-size: 16px;
 }
 .row ul strong {
     margin-right: 10px;
@@ -80,7 +74,7 @@
 }
 .heading{
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 600;
     border-bottom: 2px solid blue;
     color: #173b6c;
 }
