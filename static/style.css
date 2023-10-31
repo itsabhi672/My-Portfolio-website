@@ -4,6 +4,7 @@
 }
 
 .container {
+    font-family: "Poppins", sans-serif;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -12,7 +13,7 @@
 .container-left {
     background-color: #040b14;
     color: white;
-    height: 100vh;
+    height: 100%;
 }
 
 .profile-dp img {
@@ -47,7 +48,7 @@
     background-color: #007aff;
 }
 .navbar {
-    margin: 50px
+    margin: 42px 40px 28px 60px;
 }
 .navbar ul li{
     list-style: none;
@@ -59,7 +60,10 @@
 }
 .navbar ul li a:hover{
     color: #F5F7F8;
-
+}
+.navbar ul li.active a {
+    color: #F5F7F8;
+    background-color: yellow;
 }
 .navbar ul li a{
     font-size: 18px;
@@ -78,7 +82,8 @@
     font-weight: 700;
 }
 .footer .creator{
-    margin-top: 12px;
+    margin-top: 6px;
+    margin-bottom: 5px;
 }
 
 /* ........................... Right part ................................... */
@@ -86,7 +91,7 @@
 .container-right {
     text-align: center;
     font-family: "Poppins", sans-serif;
-    height: 100vh;
+    height: 100%;
     background-color: #9CB6C7;
 }
 .container-right .name{

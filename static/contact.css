@@ -1,8 +1,6 @@
 
 .container-right {
     text-align: left;
-
-    height: 100vh;
     background-color: #9CB6C7;
 }
 .frame{
@@ -21,6 +19,7 @@
 }
 .contact-me p{
     padding: 22px 8px;
+    letter-spacing: 1px;
 }
 .contact-me .heading{
     border-bottom: 2px solid blue;
@@ -136,5 +135,6 @@ form .button:hover{
 }
 .flash h4{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
