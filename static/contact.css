@@ -1,0 +1,140 @@
+
+.container-right {
+    text-align: left;
+
+    height: 100vh;
+    background-color: #9CB6C7;
+}
+.frame{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-me{
+    text-align: left;
+}
+.contact-me span{
+    font-weight: 600;
+    font-size: 36px;
+    padding: 0px 8px;
+}
+.contact-me p{
+    padding: 22px 8px;
+}
+.contact-me .heading{
+    border-bottom: 2px solid blue;
+    color: #173b6c;
+    margin: 15px 0px;
+    font-size: 31px;
+}
+.contact-location{
+    margin: 40px 0px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 11px 2px #78878d;
+}
+.info{
+    margin: 40px 22px;
+}
+.container-right .contact-location p {
+    color: #173b6c;
+    font-family: "Poppins", sans-serif;
+}
+.contact-form{
+    margin: 20px 0px;
+    padding: 8px 96px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 11px 2px #78878d;
+}
+.address{
+    text-align: left;
+    margin-bottom: 0px;
+}
+.address p{
+    text-align: center;
+}
+.info{
+    padding: 8px 0px;
+}
+.email {
+    padding: 18px 0px;
+    text-align:left;
+
+}
+.phone {
+    padding: 18px 0px;
+    text-align:left;
+}
+.info iframe{
+    height:20px;
+}
+.info i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.info i:hover{
+    background: #149ddd;
+    color:#fff;
+
+}
+.contact-form{
+    display: inline-block;
+    text-align:left;
+    padding: 40px;
+}
+.contact-form span{
+    font-size: 18px;
+}
+.contact-form .input-area input{
+    margin-bottom: 14px;
+    margin-right: 35px;
+    height: 32px;
+}
+.contact-form .label-area{
+    margin-right: 62px;
+}
+.text-area{
+    width: 334px;
+    height: 125px;
+    margin-top: 18px;
+}
+.contact-form label{
+    margin-right: 67px;
+    font-size: 18px;
+}
+form .button{
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    background: #149ddd;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+form .button:hover{
+    cursor: pointer;
+    background: #007aff;
+    transition: 0.4s;
+}
+#message{
+    height: 90;
+    width: 316px;
+}
+#subject {
+    height: 40px;
+}
+.flash h4{
+    text-align: center;
+    margin-top: 20px;
+}

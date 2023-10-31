@@ -1,0 +1,111 @@
+{% include 'header.html' %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+{% endblock %}
+<body>
+    <div class="container">
+        {% include 'base.html' %}
+        <div class="conainer-right">
+            <div class="about-me">
+              <span class="heading">About</span>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                  sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="description">
+                <div class="about-img">
+                    <img src=" {{url_for('static', filename='images/download.jfif')}} " alt="s">
+                </div>
+                <div class="about-details">
+                    <h3>Python Developer &amp; Cyber Security Expert.</h3>
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <ul>
+                          <li><i class="fa fa-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                          <li><i class="fa fa-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                          <li><i class="fa fa-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+                          <li><i class="fa fa-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <ul>
+                          <li><i class="fa fa-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                          <li><i class="fa fa-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                          <li><i class="fa fa-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
+                          <li><i class="fa fa-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                        </ul>
+                      </div>
+                    </div>
+<!--                    <p>-->
+<!--                      Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.-->
+<!--                      Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.-->
+<!--                    </p>-->
+                </div>
+            </div>
+
+<!--     ..........................   Skills Section .................-->
+            <div class="skills">
+                <div class="about-me">
+                    <span class="heading">Skills</span>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row skills-content">
+
+                  <div class="sections" data-aos="fade-up">
+
+                    <div class="progress">
+                      <span class="skill">HTML <i class="val">100%</i></span>
+                      <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="progress">
+                      <span class="skill">CSS <i class="val">90%</i></span>
+                      <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="progress">
+                      <span class="skill">JavaScript <i class="val">75%</i></span>
+                      <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="sections" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="progress">
+                      <span class="skill">PHP <i class="val">80%</i></span>
+                      <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="progress">
+                      <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+                      <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="progress">
+                      <span class="skill">Photoshop <i class="val">55%</i></span>
+                      <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

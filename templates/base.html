@@ -1,0 +1,27 @@
+
+<div class="container-left">
+            <div class="profile-dp">
+                <img src="{{ url_for('static', filename='images/profilepic.jpg') }}" alt="Profile Picture">
+                <h2>Abhimanyu Kumar</h2>
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('home') }}"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="{{ url_for('about') }}"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="{{ url_for('projects') }}"><i class="fa fa-book"></i>Projects</a></li>
+                    <li><a target="_blank" href="https://drive.google.com/file/d/1B8lJUlg23L21CEjUcAPj7ntpKnWI238r/view"><i class="fa fa-file"></i>Resume</a></li>
+                    <li><a href="{{ url_for('contact') }}"><i class="fa fa-envelope"></i>Contact</a></li>
+
+                </ul>
+            </nav>
+            <footer class="footer">
+                <p class="copyright">&copy; Copyright <span>Abhimanyu</span></p>
+                <p class="creator">Designed by <span>Abhimanyu Kumar</span></p>
+            </footer>
+            </div>

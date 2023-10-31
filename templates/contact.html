@@ -1,0 +1,73 @@
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+{% include 'header.html' %}
+<body>
+    <div class="container">
+        {% include 'base.html' %}
+        <div class="container-right">
+            <div class="contact-me">
+                <span class="heading">Contact</span>
+                <p>
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                    sit in iste officiis commodi quidem hic quas.
+                </p>
+            </div>
+            <div class="frame">
+                <div class="contact-location">
+                    <div class="info">
+                      <div class="address">
+                        <i class="fa fa-map-marker"></i>
+                        <h4>Location:</h4>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                      </div>
+
+                      <div class="email">
+                        <i class="fa fa-envelope"></i>
+                          <h4>Email:</h4>
+                        <p>info@example.com</p>
+                      </div>
+
+                      <div class="phone">
+                        <i class="fa fa-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+1 5589 55488 55s</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form method="POST" action="{{ url_for('contact') }}">
+                        {{ form.csrf_token }}
+                        <span class="label-area">{{ form.name.label }}{{ form.email.label }}</span><br>
+                        <span class="input-area">{{ form.name(size=15) }}{{ form.email(size=15) }}</span><br>
+                        {{ form.subject.label }}<br>
+                        {{ form.subject(size=40) }}<br>
+                        <div class="text-area">
+                        {{ form.message.label }}<br>
+                        {{ form.message }}
+                        </div> <br>
+                        <input type="submit" value="Send Message" class="button">
+                    </form>
+                    <div class="flash">
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            {% for message in messages %}
+                              <h4>{{ message }}</h4>
+                            {% endfor %}
+                          {% endif %}
+                        {% endwith %}
+                        {% macro render_field(field) %}
+                        {% if field.errors %}
+                            {% for error in field.errors %}
+                              <h4>{{ error }}</h4>
+                            {% endfor %}
+                        {% endif %}
+                        {% endmacro %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

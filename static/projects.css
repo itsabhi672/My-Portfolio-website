@@ -1,0 +1,33 @@
+.project-heading{
+    text-align: left;
+}
+.project-heading span{
+    font-weight: 600;
+    font-size: 36px;
+    padding: 0px 8px;
+}
+.project-heading p{
+    padding: 28px 8px;
+}
+.project-heading .heading{
+    border-bottom: 2px solid blue;
+    color: #173b6c;
+    margin: 15px 0px;
+    font-size: 31px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #fff;
+  padding: 10px;
+  grid-gap: 5px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0px 0px 0px;
+  text-align: center;
+}
+.grid-item img{
+    width: 240px;
+}

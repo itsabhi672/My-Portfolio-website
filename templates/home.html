@@ -1,0 +1,36 @@
+{% include 'header.html' %}
+<body>
+    <div class="container">
+        {% include 'base.html' %}
+        <div class="container-right">
+            <div class="name">
+                <h1>Abhimanyu Kumar</h1>
+            </div>
+            <div class="animate">
+                <h2 class="first-text">I'm a</h2>
+                <span class="sec-text">Freelancer</span>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const text = document.querySelector(".sec-text");
+        const textload = () => {
+            setTimeout(() => {
+                text.textContent = "Freelancer.";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Programmer.";
+            }, 3000);
+            setTimeout(() => {
+                text.textContent = "Developer.";
+            }, 6000);
+            setTimeout(() => {
+                text.textContent = "Coder.";
+            }, 9000);
+        }
+        textload()
+        setInterval(textload, 12000)
+    </script>
+</body>
+</html>

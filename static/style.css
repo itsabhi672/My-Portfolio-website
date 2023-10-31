@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+/* ............................................... Left Part ........................................ */
+
+.container-left {
+    background-color: #040b14;
+    color: white;
+    height: 100vh;
+}
+
+.profile-dp img {
+    border-radius: 50%;
+    outline: 5px solid #2c2f3f
+}
+.profile-dp h2{
+    margin: 16px 0px 28px 0px;
+}
+.profile-dp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-dp .soical-links {
+    margin: 20px;
+    text-align: start;
+}
+.soical-links a i{
+    padding-left: 10px;
+}
+.profile-dp a {
+    font-size: 16px;
+    border-radius: 26px;
+    color: white;
+    background-color: #212431;
+    padding: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.profile-dp a:hover{
+    background-color: #007aff;
+}
+.navbar {
+    margin: 50px
+}
+.navbar ul li{
+    list-style: none;
+    padding: 12px 15px;
+
+}
+.navbar ul li a i{
+    padding-right: 8px;
+}
+.navbar ul li a:hover{
+    color: #F5F7F8;
+
+}
+.navbar ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #bdb3b3;
+}
+.footer{
+    text-align: center;
+}
+.footer .copyright span{
+    font-weight: 800;
+    color: wheat;
+}
+.footer .creator span{
+    color: #007aff;
+    font-weight: 700;
+}
+.footer .creator{
+    margin-top: 12px;
+}
+
+/* ........................... Right part ................................... */
+
+.container-right {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-color: #9CB6C7;
+}
+.container-right .name{
+    margin-top: 230px;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.container-right h1{
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.container-right p{
+    color:#fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.animate {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    display: inline-flex;
+    overflow: hidden;
+}
+.animate .first-text{
+    font-weight:500;
+}
+.animate .sec-text{
+    font-weight:800;
+    margin-left: 14px;
+    font-size: 1.5em;
+    position: relative;
+    color: #56a0ee;
+}
+.animate .sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #9CB6C7;
+    border-left: 2px solid #fff;
+    animation: typing 3s steps(14) infinite;
+}
+
+@keyframes typing {
+
+    40%, 60% {
+        left: 100%;
+    }
+    100%{
+        left:0%;
+    }
+}

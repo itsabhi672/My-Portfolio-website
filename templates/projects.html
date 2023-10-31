@@ -1,0 +1,47 @@
+{% include 'header.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+<body>
+    <div class="container">
+        <div class="container-left">
+            {% include 'base.html' %}
+        </div>
+        <div class="container-right">
+            <div class="project-heading">
+                <span class="heading">Projects</span>
+                <p>
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                </p>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="{{ url_for('static', filename='images/laptop-image.jpg') }}" alt="project image">
+                    <a><h3>Project Title</h3></a>
+                </div>
+                <div class="grid-item">
+                    <img src="{{ url_for('static', filename='images/laptop-image.jpg') }}" alt="project image">
+                    <a href="#"><h3>Project Title</h3></a>
+                </div>
+                <div class="grid-item">
+                    <img src="{{ url_for('static', filename='images/laptop-image.jpg') }}" alt="project image">
+                    <a><h3>Project Title</h3></a>
+                </div>
+                <div class="grid-item">
+                    <img src="{{ url_for('static', filename='images/laptop-image.jpg') }}" alt="project image">
+                    <a><h3>Project Title</h3></a>
+                </div>
+                <div class="grid-item">
+                    <img src="{{ url_for('static', filename='images/laptop-image.jpg') }}" alt="project image">
+                    <a><h3>Project Title</h3></a>
+                </div>
+                <div class="grid-item">
+                    <img src="{{ url_for('static', filename='images/laptop-image.jpg') }}" alt="project image">
+                    <a><h3>Project Title</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
